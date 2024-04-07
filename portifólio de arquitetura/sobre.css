@@ -1,0 +1,139 @@
+.texto{
+    margin: 25px 30px 25px 25px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    background-color: rgba(12, 11, 11, 0.945);
+    font-family: garamond;
+    font-size: 30px;
+
+}
+
+.titulo{
+    text-align: center;
+    font-size: 85px;
+    margin: 25px 30px 25px 25px;
+    
+}
+
+.subtitulo{
+    font-size: 35px;
+    text-align: center;
+    margin: 25px 30px 25px 25px;
+}
+
+h2{
+   text-align: center;
+   font-size: 40px;
+}
+
+.quemsomos{
+    width: 40%;
+    text-align: center;
+    margin: 0% 60%;
+}
+
+.conforto{
+    width: 40%;
+    text-align: center;
+}
+
+.construcao{
+    width: 40%;
+    text-align: center;
+    margin: 0% 60%;
+}
+
+.sustentaveis{
+    width: 40%;
+    text-align: center;
+}
+
+.ambiente{
+    width: 40%;
+    text-align: center;
+    margin: 0% 60%;
+}
+
+.final{
+    font-size: 40px;
+}
+
+
+.slides{
+    height: 50vh;
+    width: 50%;
+    overflow: hidden;
+    border: #ffffffa4 double 5px;
+    border-radius: 1000px;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 20px;
+}
+
+.slide{
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+    inset: 0;
+    animation: slide-show 6s infinite;
+}
+.slidequem{
+    margin: -22% 0% 0% 03%;
+}
+
+.slideconforto{
+    margin: -23% 0% 0% 46%;
+}
+
+.slideconstrucao{
+    margin: -25% 0% 0% 03%;
+}
+
+.slidesustentavel{
+    margin: -25% 0% 0% 46%;
+}
+
+.slideambiente{
+    margin: -26% 0% 0% 03%;
+}
+
+.slide-1{
+    animation-delay:3s;
+}
+
+.slide-2{
+    animation-delay: 6s;
+
+}
+
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.textofinal{
+    background-color: rgb(103, 102, 102);
+    text-align: center;
+}
+
+@keyframes slide-show{
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    20%, 30% {
+        opacity: 1;
+        scale: 1.04;
+    }
+    40% {
+        opacity: 0;
+    }
+}

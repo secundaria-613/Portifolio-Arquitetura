@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portifólio de Arquitetura</title>
+  <style>
+    body{
+        background: #000000de;
+        min-height: 80vh;
+        display: grid;
+        place-items: center;
+    }
+    .slides{
+        height: 75vh;
+        width: 100%;
+        overflow: hidden;
+        border: #ffffffa4 double 5px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 20px;
+    }
+
+    .slide{
+        position: absolute;
+        height: 100%;
+        opacity: 0;
+        inset: 0;
+        animation: slide-show 9s infinite;
+    }
+    .slide-1{
+        animation-delay:1s;
+    }
+
+    .slide-2{
+        animation-delay: 4s;
+
+    }
+
+    .slide-3{
+        animation-delay: 7s;
+    }
+
+    .slide img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    @keyframes slide-show{
+        0% {
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        20%, 30% {
+            opacity: 1;
+            scale: 1.04;
+        }
+        40% {
+            opacity: 0;
+        }
+    }
+
+
+/* Menu Hamburguer */
+
+
+body {
+    font-family: garamond;
+}
+
+#sidebar {
+    position: absolute;
+    width: 450px;
+    height: 190%;
+    background: #000000ef;
+    left: -450px;
+    transition: .4s;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar ul li {
+    list-style: none;
+    color: #ffffff;
+    font-size: 28px;
+    padding: 40px 30px;
+    text-align: left;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    top: 150px;
+    left: 480px;
+}
+
+.toggle-btn span {
+    width: 40px;
+    height: 4px;
+    background: #ffffff;
+    display: block;
+    margin-top: 4px;
+}
+
+/*site normal*/
+p{
+    margin: 50px;
+    padding: 35px;
+    font-family: garamond;
+    font-size: 45px;
+    text-align: center;
+    color: #fff;
+}
+
+h1{
+   font-size: 60px;
+       font-family: garamond;
+}
+
+/*bordas do menu*/
+nav{
+    text-align: left;
+    margin-top: 50px;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0px 20px 0px;
+    position:relative;
+}
+
+nav a::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after{
+    width: 110%;
+}
+
+ul{
+    text-align: left;
+}
+
+  </style>
+</head>
+<body>
+
+    <h1>Eleodoro Arquitetura</h1>
+    <div class="slides">
+        <div class="slide slide-1">
+            <img src="imagem1.png" alt="">
+        </div>
+        <div class="slide slide-2">
+            <img src="imagem-2.jpg" alt="">
+        </div>
+        <div class="slide slide-3">
+            <img src="imagem-3.jpeg" alt="">
+        </div>
+
+    </div>
+
+<!--Menu Hamburguer-->
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+        <ul>
+            
+            <br><br><br><br><br><br><br><br>
+            <li><a href="sobre.html">Sobre<a></li>
+            <br>
+            <li><a href="projetos.html">Projetos<a></li>
+            <br>
+            <li><a href="">Futuras construções<a></li>
+            <br>
+            <li><a href="contato.html">Contato<a></li>
+            <br>
+        </nav>
+        </ul>
+    </div>
+    <hr</hr>
+    <script>
+        function show() {
+        document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+
+<script src="SCRIPT.JS"></script>
+<br><br>
+<hr>
+<p>O Eleodoro Arquitetura é uma empresa comprometida com a excelência em cada projeto. Nosso time de arquitetos visionários e engenheiros dedicados trabalha em harmonia para transformar sonhos em realidade. Desde a concepção até a entrega final, cada detalhe é cuidadosamente planejado para superar expectativas.        </p>
+<hr>
+<h2>
+
+</h2>
+</body>
+</html>

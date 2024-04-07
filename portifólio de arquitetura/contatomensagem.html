@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato realizado</title>
+    <style>
+        
+        html, body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            color: rgb(255, 255, 255);
+            justify-content: center;
+        }
+        
+        #div{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        #imagem{
+            position: fixed;
+            top: -30px; bottom: -30px;
+            right: -30px; left: -30px;
+            z-index:-1;
+        }
+        #imagem img{
+            width: 100%;
+            filter: blur(10px);
+            filter: brightness(20%);
+            background-size: cover;
+            min-height: 100vh;
+            padding: 20px 20px 50px;
+        }
+        .texto {
+            margin-top: 7%;
+        }
+
+        .texto{
+            text-align: center;
+            font-size: 25px;
+            font-style: italic;
+            margin: 300px 300px 300px 400px;
+        }
+
+        button{
+            padding: 15px 50px;
+            margin: 20px;
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            border-radius: 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: ease-in-out .30s;
+        }
+
+        button:hover{
+            background: #a09e9e;
+        }
+
+        .center{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="imagem"><img src="imagem-ambiente-3.jpg"></div>
+    <br><br><br><br>
+    <div class="texto">Muito obrigado por nos contactar, eviaremos mensagem á você em até 24 horas para solucionar quaisquer dúvidas.
+        <form action="INDEX.HTML" method="post">
+        <div class="center">
+            <button type="submit" href="INDEX.HTML"> Voltar para página inicial </button>
+        </div>
+    </form>   
+    </div>
+</body>
+</html>
